@@ -14,7 +14,7 @@ alias cd..='cd ..'
 
 # Customization
 # custom bash made in https://scriptim.github.io/bash-prompt-generator/
-PS1='\[\e[0;1;38;5;203m\]\u\[\e[0;1;2;38;5;203m\]@\[\e[0;1;38;5;203m\]\h\[\e[0;38;5;209m\]: \[\e[0m\]\w\[\e[0m\]$ \[\e[0m\]'
+PS1='\[\e[0;1;38;5;203m\]\u\[\e[0;1;2;38;5;203m\]@\[\e[0;1;38;5;203m\]\h\[\e[0;38;5;209m\]: \[\e[0m\]\W\[\e[0m\]$ \[\e[0m\]'
 alias ls='ls --color=always'
 LS_COLORS=$LS_COLORS:'di=1;36:'; export LS_COLORS
 
