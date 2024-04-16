@@ -1,8 +1,5 @@
 # Commands aliases
-alias instalar='sudo apt-get install'
-alias remover='sudo apt-get remove'
-alias atualizar='sudo apt-get upgrade'
-alias limpar='sudo apt-get autoremove'
+alias pacman='sudo pacman'
 alias py='python3'
 
 # Directories shortcuts
