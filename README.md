@@ -1,3 +1,3 @@
-# dotfiles
+## Dotfiles
 
-Just my personal dotfiles, with some customization and other tweaks to make my life easier.
+This repository contains my personal configuration files (dotfiles) for various tools and applications, including Micro editor, Neofetch and Dooit. These dotfiles are used to customize my development environment. Feel free to customize these files to suit your needs. You can modify the configuration files to change themes, key bindings, and other settings.
