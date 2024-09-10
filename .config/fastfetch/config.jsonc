@@ -12,7 +12,7 @@
     {"type": "uptime", "key": "├ Uptime" },
     {"type": "packages",   "key": "└ Packages" },
     {"type": "separator", "string": " " },
-    {"type": "host","format": "{2},{5}" },
+    {"type": "host","format": "{2} {5}" },
     {"type": "cpu","key": "├ CPU", "temp":true, "showPeCoreCount":true},
     {"type": "memory","key": "├ Memory"},
     {"type": "swap", "key": "├ Swap"},
