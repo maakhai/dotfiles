@@ -2,6 +2,10 @@
 alias dpkg='sudo dpkg'
 alias apt='sudo nala'
 alias py='python3'
+alias neofetch='neofetch --backend kitty --source .config/neofetch/images/image.png'
+alias icat='kitten icat'
+alias cat='batcat'
+alias flatinstall='flatpak install flathub -y'
 
 # Directories shortcuts
 alias home='cd ~'
@@ -12,7 +16,7 @@ alias cd..='cd ..'
 
 # Customization
 # custom bash made in https://scriptim.github.io/bash-prompt-generator/
-export PS1=' \[\e[38;5;203;1m\]\u\[\e[0m\] \w \[\e[38;5;203m\]>\[\e[0m\] '
+export PS1='\[\e[38;5;203;1m\]\u\[\e[0m\] \w \[\e[38;5;203m\]>\[\e[0m\] '
 
 alias ls='ls --color=always'
 LS_COLORS=$LS_COLORS:'di=1;33:'; export LS_COLORS
@@ -38,4 +42,14 @@ extract() {
     else
         echo "'$1' is not a valid file!"
     fi
+}
+
+command_not_found_handle() {
+   local trycmd=$(echo "$1" | tr '[:upper:]' '[:lower:]')
+   if command -v "$trycmd" &> /dev/null; then
+       echo "Corrigindo '$1' pra '$trycmd'"
+       "$trycmd" "${@:2}"
+   else
+       echo "bash: $1: command not found"
+   fi
 }
