@@ -1,0 +1,12 @@
+# Commands aliases
+alias dpkg='sudo dpkg'
+alias apt='sudo nala'
+alias py='python3'
+alias neofetch='neofetch --backend kitty --source .config/neofetch/images/image.png'
+alias icat='kitten icat'
+alias cat='batcat'
+alias flatinstall='flatpak install flathub -y'
+
+# Directories shortcuts
+alias home='cd ~'
+alias root='cd /'
